@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>AgriPlant</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="mainGame">
+    <img src="assets/mainScr.png" id="mainBg" class="bgImg">
+    <div id="icons">
+      <button type="button" onclick="about()" class="mainButtons" id="mainInstr"><img src="assets/buttons/infoButt.png" class="genButtImgs"></img></button>
+      <button type="button" onclick="trivia()" class="mainButtons" id="mainTriv" class="button"><img src="assets/buttons/trivButt.png" class="genButtImgs" id="mainTrivImg"></img></button>
+      <button type="button" onclick="market()" class="mainButtons" id="mainMarket"><img src="assets/buttons/marketButt.png" class="genButtImgs"></img></button>
+      <button type="button" onclick="endDay()" class="endDayButton" id="mainEndDay">END DAY</button>
+    </div>
+    <div id="cropIcons">
+      <img src="assets/crops/emptyCrop.png" id="crop0" class="genCropsImgs">
+      <img src="assets/crops/emptyCrop.png" id="crop1" class="genCropsImgs">
+      <img src="assets/crops/emptyCrop.png" id="crop2" class="genCropsImgs">
+      <img src="assets/crops/emptyCrop.png" id="crop3" class="genCropsImgs">
+      <img src="assets/crops/emptyCrop.png" id="crop4" class="genCropsImgs">
+      <img src="assets/crops/emptyCrop.png" id="crop5" class="genCropsImgs">
+      <img src="assets/crops/emptyCrop.png" id="crop6" class="genCropsImgs">
+    </div>
+    <div id="selectTools">
+      <button type="button" onclick="selecting(this.id)" class="mainButtons" id="select0"><img src="assets/toolsSelection/emptySelection.png" id="select0Img" class="genSelectImgs"></button>
+      <button type="button" onclick="selecting(this.id)" class="mainButtons" id="select1"><img src="assets/toolsSelection/emptySelection.png" id="select1Img" class="genSelectImgs"></button>
+      <button type="button" onclick="selecting(this.id)" class="mainButtons" id="select2"><img src="assets/toolsSelection/emptySelection.png" id="select2Img" class="genSelectImgs"></button>
+      <button type="button" onclick="selecting(this.id)" class="mainButtons" id="select3"><img src="assets/toolsSelection/emptySelection.png" id="select3Img" class="genSelectImgs"></button>
+      <button type="button" onclick="selecting(this.id)" class="mainButtons" id="select4"><img src="assets/toolsSelection/emptySelection.png" id="select4Img" class="genSelectImgs"></button>
+      <button type="button" onclick="selecting(this.id)" class="mainButtons" id="select5"><img src="assets/toolsSelection/emptySelection.png" id="select5Img" class="genSelectImgs"></button>
+      <button type="button" onclick="selecting(this.id)" class="mainButtons" id="select6"><img src="assets/toolsSelection/emptySelection.png" id="select6Img" class="genSelectImgs"></button>
+      <button type="button" onclick="cancelSelect()" class="mainButtons" id="selectCancel"><img src="assets/buttons/xButt.png" class="genSelectConfirmImgs"></button>
+      <button type="button" onclick="confirmSelect()" class="mainButtons" id="selectConfirm"><img src="assets/buttons/vButt.png" class="genSelectConfirmImgs" id="selectCheckImg"></button>
+    </div>
+    
+    <div id="collectMoney"> 
+      <img src="assets/buttons/emptyCoin.png" class="genMoneyImgs" id="collectMoney0Img">
+      <img src="assets/buttons/emptyCoin.png" class="genMoneyImgs" id="collectMoney1Img">
+      <img src="assets/buttons/emptyCoin.png" class="genMoneyImgs" id="collectMoney2Img">
+      <img src="assets/buttons/emptyCoin.png" class="genMoneyImgs" id="collectMoney3Img">
+      <img src="assets/buttons/emptyCoin.png" class="genMoneyImgs" id="collectMoney4Img">
+      <img src="assets/buttons/emptyCoin.png" class="genMoneyImgs" id="collectMoney5Img">
+      <img src="assets/buttons/emptyCoin.png" class="genMoneyImgs" id="collectMoney6Img">
+    </div>
+    <div id="collectMoneyT" class="collectMoneyText">
+      <p id="collectMoney0"></p>
+      <p id="collectMoney1"></p>
+      <p id="collectMoney2"></p>
+      <p id="collectMoney3"></p>
+      <p id="collectMoney4"></p>
+      <p id="collectMoney5"></p>
+      <p id="collectMoney6"></p>
+    </div>
+  </div>
+
+  <div id="endDay">
+    <img src="assets/endOfDayScr.png" class="bgImg">
+    <p id="dailySpend">XXX</p>
+    <p id="dailyEarn">XXX</p>
+    <p id="numDeadCrops">X CROPS DIED...</p>
+    <p id="numDaysLeft">X DAYS LEFT</p>
+    <button type="button" class="mainButtons" id="nextDayButt" onclick="newDay()"><img src="assets/buttons/vButt.png" class="bigButtonImgs" id="nextDayImg"></img></button>
+  </div>
+
+  <div id="aboutPg">
+    <img src="assets/aboutScr.png" class="bgImg"> 
+    <button type="button" onclick="mainGame()" class="mainButtons" id="aboutPgX"><img src="assets/buttons/xButt2.png" class="genMarketTopButtonImgs"></img></button> 
+  </div>
+  
+  <div id="marketPlace">    
+    <div id="marketMarket">
+      <img src="assets/marketScr.png" class="bgImg"> 
+      <button type="button" onclick="marketPlants()" class="mainButtons" id="marketMarketPlants"><img src="assets/cards/plantsCrd.png" class="genMarketImgs"></img></button> 
+      <button type="button" onclick="marketTools()" class="mainButtons" id="marketMarketTools"><img src="assets/cards/toolsCrd.png" class="genMarketImgs"></img></button>  
+      <button type="button" onclick="marketUpgrades()" class="mainButtons" id="marketMarketUpgrades"><img src="assets/cards/upgradesCrd.png" class="genMarketImgs"></img></button> 
+      <button type="button" onclick="mainGame()" class="mainButtons" id="marketMarketX"><img src="assets/buttons/xButt2.png" class="genMarketTopButtonImgs"></img></button> 
+    </div>
+
+    <div id="marketPlants">
+      <img src="assets/plantsScr.png" class="bgImg"> 
+      <img src="assets/cards/lettCrd.png" class="genMarketImgs" id="marketPlantsLett">
+      <img src="assets/cards/aspCrd.png" class="genMarketImgs" id="marketPlantsAsp">
+      <img src="assets/cards/cornCrd.png" class="genMarketImgs" id="marketPlantsCorn">
+      <button type="button" onclick="marketPlantsLettInfo()" class="mainButtons" id="marketPlantsLettInfo"><img src="assets/buttons/iButt.png" class="genMarketInfoImgs" id="marketPlantsLettImg"></img></button>
+      <button type="button" onclick="marketPlantsAspInfo()" class="mainButtons" id="marketPlantsAspInfo"><img src="assets/buttons/iButt.png" class="genMarketInfoImgs" id="marketPlantsAspImg"></img></button>
+      <button type="button" onclick="marketPlantsCornInfo()" class="mainButtons" id="marketPlantsCornInfo"><img src="assets/buttons/iButt.png" class="genMarketInfoImgs" id="marketPlantsCornImg"></img></button>
+      <button type="button" onclick="marketPlants2()" class="marketPlantsNextBack" id="marketPlantsNext">></button>
+      <button type="button" onclick="market()" class="mainButtons" id="marketBackButton"><img src="assets/buttons/backButt.png" class="genMarketTopButtonImgs"></img></button>
+      <button type="button" class="mainButtons" id="marketPlantsLettPrice" onclick="plantPurchase(this.id)"><img src="assets/prices/14Butt.png" class="genMarketPricesImgs" id="marketPlantsLettPriceImg"></img></button>
+      <button type="button" class="mainButtons" id="marketPlantsAspPrice" onclick="plantPurchase(this.id)"><img src="assets/prices/23Butt.png" class="genMarketPricesImgs" id="marketPlantsAspPriceImg"></img></button>
+      <button type="button" class="mainButtons" id="marketPlantsCornPrice" onclick="plantPurchase(this.id)"><img src="assets/prices/42Butt.png" class="genMarketPricesImgs" id="marketPlantsCornPriceImg"></img></button>
+    </div>
+
+    <div id="marketPlants2">
+      <img src="assets/plantsScr.png" class="bgImg">
+      <img src="assets/cards/mushCrd.png" class="genMarketImgs" id="marketPlantsMush">
+      <img src="assets/cards/strawCrd.png" class="genMarketImgs" id="marketPlantsStraw">
+      <button type="button" onclick="marketPlantsMushInfo()" class="mainButtons" id="marketPlantsMushInfo"><img src="assets/buttons/iButt.png" class="genMarketInfoImgs" id="marketPlantsMushImg"></img></button>
+      <button type="button" onclick="marketPlantsStrawInfo()" class="mainButtons" id="marketPlantsStrawInfo"><img src="assets/buttons/iButt.png" class="genMarketInfoImgs" id="marketPlantsStrawImg"></img></button>
+      <button type="button" onclick="marketPlants()" class="marketPlantsNextBack" id="marketPlantsBack"><</button>
+      <button type="button" onclick="market()" class="mainButtons" id="marketBackButton"><img src="assets/buttons/backButt.png" class="genMarketTopButtonImgs"></img></button>
+      <button type="button" class="mainButtons" id="marketPlantsMushPrice" onclick="plantPurchase(this.id)"><img src="assets/prices/76Butt.png" class="genMarketPricesImgs" id="marketPlantsMushPriceImg"></img></button>
+      <button type="button" class="mainButtons" id="marketPlantsStrawPrice" onclick="plantPurchase(this.id)"><img src="assets/prices/107Butt.png" class="genMarketPricesImgs" id="marketPlantsStrawPriceImg"></img></button>
+    </div>
+    
+    <div id="marketTools">
+      <img src="assets/toolsScr.png" class="bgImg"> 
+      <img src="assets/cards/pestCrd.png" class="genMarketImgs" id="marketToolsPest">
+      <img src="assets/cards/fertCrd.png" class="genMarketImgs" id="marketToolsFert">
+      <button type="button" onclick="marketToolsPestInfo()" class="mainButtons" id="marketToolsPestInfo"><img src="assets/buttons/iButt.png" class="genMarketInfoImgs" id="marketToolsPestImg"></img></button>
+      <button type="button" onclick="marketToolsFertInfo()" class="mainButtons" id="marketToolsFertInfo"><img src="assets/buttons/iButt.png" class="genMarketInfoImgs" id="marketToolsFertImg"></img></button>
+      <button type="button" onclick="market()" class="mainButtons" id="marketBackButton"><img src="assets/buttons/backButt.png" class="genMarketTopButtonImgs"></img></button>
+      <button type="button" class="mainButtons" id="marketToolsPestPrice" onclick="toolPurchase(this.id)"><img src="assets/prices/54Butt.png" class="genMarketPricesImgs" id="marketToolsPestPriceImg"></img></button>
+      <button type="button" class="mainButtons" id="marketToolsFertPrice" onclick="toolPurchase(this.id)"><img src="assets/prices/97Butt.png" class="genMarketPricesImgs" id="marketToolsFertPriceImg"></img></button>
+    </div>
+      
+    <div id="marketUpgrades">
+      <img src="assets/upgradesScr.png" class="bgImg"> 
+      <img src="assets/cards/windbrCrd.png" class="genMarketImgs" id="marketUpgradesWindbr">
+      <img src="assets/cards/windPowCrd.png" class="genMarketImgs" id="marketUpgradesWindPow">
+      <button type="button" onclick="marketUpgradesWindbrInfo()" class="mainButtons" id="marketUpgradesWindbrInfo"><img src="assets/buttons/iButt.png" class="genMarketInfoImgs" id="marketUpgradesWindbrImg"></img></button>
+      <button type="button" onclick="marketUpgradesWindPowInfo()" class="mainButtons" id="marketUpgradesWindPowInfo"><img src="assets/buttons/iButt.png" class="genMarketInfoImgs" id="marketUpgradesWindPowImg"></img></button>
+      <button type="button" onclick="market()" class="mainButtons" id="marketBackButton"><img src="assets/buttons/backButt.png" class="genMarketTopButtonImgs"></img></button>
+      <button type="button" class="mainButtons" id="marketUpgradesWindbrPrice" onclick="upgradePurchase(this.id)"><img src="assets/prices/156Butt.png" class="genMarketPricesImgs" id="marketUpgradesWindbrPriceImg"></img></button>
+      <button type="button" class="mainButtons" id="marketUpgradesWindPowPrice" onclick="upgradePurchase(this.id)"><img src="assets/prices/201Butt.png" class="genMarketPricesImgs" id="marketUpgradesWindPowPriceImg"></img></button>
+    </div>
+  </div>
+
+  <div id="triviaPlace"> 
+    <img src="assets/triviaScr.png" class="bgImg">
+    <button type="button" class="triviaParts" id="triviaQuestion"></button>
+    <button type="button" class="triviaParts" id="triviaAns0" onclick="checkAns(this.id)"></button>
+    <button type="button" class="triviaParts" id="triviaAns1" onclick="checkAns(this.id)"></button>
+    <button type="button" class="triviaParts" id="triviaAns2" onclick="checkAns(this.id)"></button> 
+    <button type="button" disabled class="mainButtons" id="confirmAns" onclick="confirmAns()"><img src="assets/buttons/vButt.png" class="bigButtonImgs" id="confirmAnsImg"></img></button>
+    <button type="button" onclick="mainGame()" class="mainButtons" id="triviaX"><img src="assets/buttons/xButt2.png" class="genMarketTopButtonImgs"></img></button> 
+  </div>
+
+  <div id="end"> 
+    <img src="assets/failScr.png" id="endBg" class="bgImg">
+    <button type="button" class="endButtons" id="scoreBoardButton" onclick="scoreboard()">SCOREBOARD</button>
+    <button type="button" class="endButtons" id="playAgainButton" onclick="window.location.reload();">PLAY AGAIN</button>
+    <p class="endText" id="endCurrent"></button>
+    <p class="endText" id="endGoal">100</button>
+  </div>
+
+  <div id="scoreBoard"> 
+    <img src="assets/scoreScr.png" id="endBg" class="bgImg">
+    <p class="scoreText" id="A1"></p>
+    <p class="scoreText" id="B1"></p>
+    <p class="scoreText" id="A2"></p>
+    <p class="scoreText" id="B2"></p>
+    <p class="scoreText" id="A3"></p>
+    <p class="scoreText" id="B3"></p>
+    <p class="scoreText" id="A4"></p>
+    <p class="scoreText" id="B4"></p>
+    <p class="scoreText" id="A5"></p>
+    <p class="scoreText" id="B5"></p>
+    <button type="button" onclick="endGame()" class="mainButtons" id="scoreBackButton"><img src="assets/buttons/backButt.png" class="genScoreBackImg"></img></button> 
+  </div>
+
+  <div id="clickThrough"><p id="currCoins">100</p></div>
+  <h1 id="dayNum"><center>DAY 1</center></h1>  
+  <div id="speechDiv">
+    <img src="assets/speechBubbles/1.png" id="speechBub" class="bgImg"></img>  
+  </div>
+  
+  <div id="instrQ"> 
+    <img src="assets/instrQScr.png" class="bgImg">
+      <button type="button" onclick="mainGame()" class="mainButtons" id="selectCancel"><img src="assets/buttons/xButt.png" class="genSelectConfirmImgs"></button>
+      <button type="button" onclick="redoInstr()" class="mainButtons" id="selectConfirm"><img src="assets/buttons/vButt.png" class="genSelectConfirmImgs"></button>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
