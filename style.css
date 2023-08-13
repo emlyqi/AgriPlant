@@ -1,0 +1,1224 @@
+/* * {
+  margin: auto;
+  max-width: 960px;
+  max-height: 540px;
+} */
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.bgImg {      
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 1280px;
+  height: 720px;
+  position: absolute;
+}
+
+.startButton {
+  position: absolute;
+  width: 250px;
+  height: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 540px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 50px;
+  font-family: Monaco, monospace;
+  transition-duration: 0.4s;
+  cursor: pointer; 
+  border-radius: 50px;
+  background-color: #79C85D;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+.startButton:hover {
+  background-color: white;   
+  border: 5px solid #79C85D; 
+  color: #79C85D;  
+}
+
+#dayNum {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 500px;
+  text-align: center;
+  position: absolute;
+  padding: 0;
+  top: -10px;
+  text-decoration: none;
+  font-size: 92px;
+  font-weight: bold;  
+  font-family: Monaco, monospace;
+  color: #00446B;
+}
+
+#clickThrough {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 1280px;
+  height: 720px;
+  pointer-events: none;
+  position: absolute;  
+}
+
+#currCoins {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: right;
+  position: absolute;
+  padding: 0;
+  top: 12px;
+  right: 110px;
+  text-decoration: none;
+  font-size: 34px;
+  font-family: Monaco, monospace;
+  color: #ffffff; 
+}
+
+.marketPlantsNextBack {
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 50px;
+  font-family: Monaco, monospace;
+  transition-duration: 0.4s;
+  cursor: pointer; 
+  border-radius: 100%;
+  background-color: transparent;
+  color: #EDBF9B;
+  border: none;
+  font-weight: bold;  
+}
+
+.marketPlantsNextBack:hover {
+  background-color: #EDBF9B;  
+  color: #B97642;  
+}
+
+#marketPlantsNext {
+  position: absolute;
+  left: 1066px;
+  top: 417px;
+}
+
+#marketPlantsBack {
+  position: absolute;
+  left: 140px;
+  top: 417px;  
+}
+
+.mainButtons {  
+  border-radius: 100%;
+  padding: 0px;
+  background-color: transparent;   
+  border: none;   
+  cursor: pointer;   
+  transition-duration: 0.4s;
+}
+
+.mainButtons:hover {
+  transform: scale(1.1);
+}
+
+.errorMarketButtons {
+  transform: scale(1.1);
+  border-radius: 100%;
+  padding: 0px;
+  background-color: transparent;   
+  border: none;   
+  cursor: pointer;   
+}
+
+.collectMoneyText {
+  padding: 0;
+  margin-top: -20px;
+  text-align: left;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: Monaco, monospace;
+  transition-duration: 0.4s;
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  font-weight: bold; 
+}
+
+.genButtImgs {
+  width: 78px;
+  height: 78px;
+}
+
+.genCropsImgs {
+  width: 178px;
+  height: 151px;  
+}
+
+.genMoneyImgs {
+  width: 54px;
+  height: 54px;  
+}
+
+.genSelectImgs {
+  width: 90px;
+  height: 90px;  
+}
+
+.genSelectConfirmImgs {
+  width: 123px;
+  height: 123px;    
+}
+
+.genMarketImgs {
+  width: 239px;
+  height: 324px;  
+}
+
+.genMarketPricesImgs {
+  width: 182px;
+  height: 54px;
+}
+
+.genMarketInfoImgs {
+  width: 68px;
+  height: 68px;  
+}
+
+.genMarketTopButtonImgs {
+  width: 72px;
+  height: 72px; 
+}
+
+.bigButtonImgs {
+  width: 107px;
+  height: 107px;
+}
+
+#mainGame {    
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 1280px;
+  height: 720px;
+  position: absolute;
+}
+
+#icons {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: auto;
+  height: auto;
+  position: absolute;
+}
+
+#selectTools {    
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: auto;
+  height: auto;
+  position: absolute;
+}
+
+#mainInstr {
+  position: absolute;
+  top: 26px;
+  left: 36px;
+}
+
+#mainTriv {
+  position: absolute;
+  top: 26px;
+  left: 139px;
+}
+
+#mainMarket {
+  position: absolute;
+  top: 26px;
+  left: 242px;
+}
+
+#mainEndDay {
+  position: absolute;
+  left: 1039px;
+  top: 609px; 
+}
+
+#crop0 {
+  position: absolute;
+  left: 222px;
+  top: 169px;
+}
+
+#crop1 {
+  position: absolute;
+  left: 446px;
+  top: 169px;
+}
+
+#crop2 {
+  position: absolute;
+  left: 668px;
+  top: 169px;
+}
+
+#crop3 {
+  position: absolute;
+  left: 890px;
+  top: 169px;
+}
+
+#crop4 {
+  position: absolute;
+  left: 329px;
+  top: 385px;
+}
+
+#crop5 {
+  position: absolute;
+  left: 557px;
+  top: 385px;
+}
+
+#crop6 {
+  position: absolute;
+  left: 785px;
+  top: 385px;
+}
+
+#select0 {
+  position: absolute;
+  left: 270px;
+  top: 273px;  
+}
+
+#select1 {
+  position: absolute;
+  left: 491px;
+  top: 273px;  
+  pointer-events: none;
+}
+
+#select2 {
+  position: absolute;
+  left: 714px;
+  top: 273px;  
+  pointer-events: none;
+}
+
+#select3 {
+  position: absolute;
+  left: 936px;
+  top: 273px;  
+  pointer-events: none;
+}
+
+#select4 {
+  position: absolute;
+  left: 375px;
+  top: 482px;  
+  pointer-events: none;
+}
+
+#select5 {
+  position: absolute;
+  left: 601px;
+  top: 482px;  
+  pointer-events: none;
+}
+
+#select6 {
+  position: absolute;
+  left: 830px;
+  top: 482px;  
+  pointer-events: none;
+}
+
+#selectCancel {
+  position: absolute;
+  left: 25px;
+  top: 564px;  
+}
+
+#selectConfirm {
+  position: absolute;
+  left: 1130px;
+  top: 564px;  
+}
+
+#collectMoney {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 1280px;
+  height: 720px;
+  pointer-events: none;
+  position: absolute; 
+}
+
+#collectMoneyT {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 1280px;
+  height: 720px;
+  pointer-events: none;
+  position: absolute; 
+}
+
+#collectMoney0 {
+  left: 300px;
+  top: 210px;
+  position: absolute; 
+}
+
+#collectMoney0Img {
+  left: 239px;
+  top: 210px;
+  position: absolute;   
+}
+
+#collectMoney0Img {
+  vertical-align: middle;
+}
+
+#collectMoney1 {
+  left: 518px;
+  top: 210px;
+  position: absolute; 
+}
+
+#collectMoney1Img {
+  left: 457px;
+  top: 210px;
+  position: absolute; 
+}
+
+#collectMoney1Img {
+  vertical-align: middle;
+}
+
+#collectMoney2 {
+  left: 744px;
+  top: 210px;
+  position: absolute; 
+}
+
+#collectMoney2Img {
+  left: 683px;
+  top: 210px;
+  position: absolute; 
+}
+
+#collectMoney2Img {
+  vertical-align: middle;
+}
+
+#collectMoney3 {
+  left: 966px;
+  top: 210px;
+  position: absolute; 
+}
+
+#collectMoney3Img {
+  left: 905px;
+  top: 210px;
+  position: absolute; 
+}
+
+#collectMoney3Img {
+  vertical-align: middle;
+}
+
+#collectMoney4 {
+  left: 405px;
+  top: 412px;
+  position: absolute; 
+}
+
+#collectMoney4Img {
+  left: 344px;
+  top: 412px;
+  position: absolute; 
+}
+
+#collectMoney4Img {
+  vertical-align: middle;
+}
+
+#collectMoney5 {
+  left: 634px;
+  top: 412px;
+  position: absolute; 
+}
+
+#collectMoney5Img {
+  left: 573px;
+  top: 412px;
+  position: absolute; 
+}
+
+#collectMoney5Img {
+  vertical-align: middle;
+}
+
+#collectMoney6 {
+  left: 866px;
+  top: 412px;
+  position: absolute; 
+}
+
+#collectMoney6Img {
+  left: 805px;
+  top: 412px;
+  position: absolute; 
+}
+
+#collectMoney6Img {
+  vertical-align: middle;
+}
+
+.endButtons {
+  width: 325px;
+  height: 104px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 40px;
+  font-family: Monaco, monospace;
+  transition-duration: 0.4s;
+  cursor: pointer; 
+  border-radius: 50px;
+  background-color: #79C85D;
+  color: white;
+  border: none;
+  font-weight: bold;  
+}
+
+.endButtons:hover {
+  background-color: white;   
+  border: 5px solid #79C85D; 
+  color: #79C85D;  
+}
+
+.endText {
+  width: 271px;
+  height: 91px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 50px;
+  font-family: Monaco, monospace;
+  color: white;
+  font-weight: bold;    
+}
+
+#endCurrent {
+  position: absolute;
+  left: 296px;
+  top: 296px;  
+}
+
+#endGoal {
+  position: absolute;
+  left: 296px;
+  top: 465px;  
+}
+
+#scoreBoardButton {
+  position: absolute;
+  left: 709px;
+  top: 338px;
+}
+
+#playAgainButton {
+  position: absolute;
+  left: 709px;
+  top: 473px;
+}
+
+.endDayButton {
+  width: 214px;
+  height: 78px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: Monaco, monospace;
+  transition-duration: 0.4s;
+  cursor: pointer; 
+  border-radius: 50px;
+  background-color: #FD6262;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+.endDayButton:hover {
+  background-color: white;   
+  border: 5px solid #FD6262; 
+  color: #FD6262;  
+}
+
+.scoreText {
+  width: 317px;
+  height: 48px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: Monaco, monospace;
+  color: #884C1C; 
+}
+
+#A1 {
+  position: absolute;
+  left: 322px;
+  top: 360px;  
+}
+
+#A2 {
+  position: absolute;
+  left: 322px;
+  top: 412px; 
+}
+
+#A3 {
+  position: absolute;
+  left: 322px;
+  top: 465px;  
+}
+
+#A4 {
+  position: absolute;
+  left: 322px;
+  top: 518px;  
+}
+
+#A5 {
+  position: absolute;
+  left: 322px;
+  top: 571px; 
+}
+
+#B1 {
+  position: absolute;
+  left: 643px;
+  top: 360px;  
+}
+
+#B2 {
+  position: absolute;
+  left: 643px;
+  top: 412px;  
+}
+
+#B3 {
+  position: absolute;
+  left: 643px;
+  top: 465px;  
+}
+
+#B4 {
+  position: absolute;
+  left: 643px;
+  top: 518px;  
+}
+
+#B5 {
+  position: absolute;
+  left: 643px;
+  top: 571px;  
+}
+
+#scoreBackButton {
+  position: absolute;
+  left: 1021px;
+  top: 507px;   
+}
+
+.genScoreBackImg {  
+  width: 130px;
+  height: 130px;
+}
+
+#aboutPgX {
+  display: block;
+  left: 1090px;
+  top: 182px;
+  position: absolute;
+}
+
+#aboutPg {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 1280px;
+  height: 720px;
+  position: absolute;
+}
+
+#triviaPlace {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 1280px;
+  height: 720px;
+  position: absolute;
+}
+
+#marketPlace {    
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 1280px;
+  height: 720px;
+  position: absolute;
+}
+
+#instrQ {  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 1280px;
+  height: 720px;
+  position: absolute;  
+}
+
+#marketMarket {    
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 1280px;
+  height: 720px;
+  position: absolute;
+}
+
+#marketPlants {    
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 1280px;
+  height: 720px;
+  position: absolute;
+}
+
+#marketPlants2 {    
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 1280px;
+  height: 720px;
+  position: absolute;
+}
+
+#marketTools {    
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 1280px;
+  height: 720px;
+  position: absolute;
+}
+
+#marketUpgrades {    
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 1280px;
+  height: 720px;
+  position: absolute;
+}
+
+#marketMarketPlants {
+  position: absolute;  
+  left: 253px;
+  top: 299px;
+}
+
+#marketPlantsLett {
+  position: absolute;  
+  left: 247px;
+  top: 293px;
+}
+
+#marketPlantsAsp {
+  position: absolute;  
+  left: 520px;
+  top: 293px;
+}
+
+#marketPlantsCorn {
+  position: absolute;  
+  left: 787px;
+  top: 293px;
+}
+
+#marketPlantsMush {
+  position: absolute;  
+  left: 247px;
+  top: 293px;
+}
+
+#marketPlantsStraw {
+  position: absolute;  
+  left: 520px;
+  top: 293px;
+}
+
+#marketPlantsLettInfo {
+  position: absolute;  
+  left: 431px;
+  top: 569px;
+}
+
+#marketPlantsAspInfo {
+  position: absolute;  
+  left: 698px;
+  top: 569px;
+}
+
+#marketPlantsCornInfo {
+  position: absolute;  
+  left: 965px;
+  top: 569px;
+}
+
+#marketPlantsMushInfo {
+  position: absolute;  
+  left: 431px;
+  top: 569px;
+}
+
+#marketPlantsStrawInfo {
+  position: absolute;  
+  left: 698px;
+  top: 569px;
+}
+
+#marketPlantsLettPrice {
+  position: absolute;  
+  left: 277px;
+  top: 349px;  
+}
+
+#marketPlantsAspPrice {
+  position: absolute;
+  left: 550px;
+  top: 349px;  
+}
+
+#marketPlantsCornPrice {
+  position: absolute;
+  left: 818px;
+  top: 349px;
+}
+
+#marketPlantsMushPrice {
+  position: absolute;  
+  left: 277px;
+  top: 349px;  
+}
+
+#marketPlantsStrawPrice {
+  position: absolute;
+  left: 550px;
+  top: 349px;  
+}
+
+#marketMarketTools {
+  position: absolute;  
+  left: 520px;
+  top: 299px;  
+}
+
+#marketToolsPest {
+  position: absolute;  
+  left: 378px;
+  top: 293px;
+}
+
+#marketToolsFert {
+  position: absolute;  
+  left: 650px;
+  top: 293px;
+}
+
+#marketToolsPestInfo {
+  position: absolute;  
+  left: 562px;
+  top: 569px;
+}
+
+#marketToolsFertInfo {
+  position: absolute;  
+  left: 834px;
+  top: 569px;
+}
+
+#marketToolsPestPrice {
+  position: absolute;  
+  left: 406px;
+  top: 349px;  
+}
+
+#marketToolsFertPrice {
+  position: absolute;
+  left: 678px;
+  top: 349px;  
+}
+
+#marketMarketUpgrades {
+  position: absolute;  
+  left: 787px;
+  top: 299px;  
+}
+
+#marketUpgradesWindbr {
+  position: absolute;  
+  left: 378px;
+  top: 293px;
+}
+
+#marketUpgradesWindPow {
+  position: absolute;  
+  left: 650px;
+  top: 293px;
+}
+
+#marketUpgradesWindbrInfo {
+  position: absolute;  
+  left: 562px;
+  top: 569px;
+}
+
+#marketUpgradesWindPowInfo {
+  position: absolute;  
+  left: 834px;
+  top: 569px;
+}
+
+#marketUpgradesWindbrPrice {
+  position: absolute;  
+  left: 406px;
+  top: 349px;  
+}
+
+#marketUpgradesWindPowPrice {
+  position: absolute;
+  left: 678px;
+  top: 349px;  
+}
+
+#marketMarketX {
+  display: block;
+  left: 1090px;
+  top: 182px;
+  position: absolute;
+}
+
+#marketBackButton {
+  display: block;
+  left: 1090px;
+  top: 182px;
+  position: absolute;
+}
+
+#endDay {    
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 1280px;
+  height: 720px;
+  position: absolute;
+}
+
+#speechDiv {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 1280px;
+  height: 720px;
+  pointer-events: none;
+  position: absolute;
+}
+
+#dailySpend {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 223px;
+  height: 75px;
+  position: absolute;
+  padding: 0;
+  top: 308px;
+  left: 387px;
+  text-decoration: none;
+  font-size: 40px;
+  font-family: Monaco, monospace;
+  color: #ffffff; 
+  font-weight: bold;
+}
+
+#dailyEarn {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 223px;
+  height: 75px;
+  position: absolute;
+  padding: 0;
+  top: 306px;
+  left: 711px;
+  text-decoration: none;
+  font-size: 40px;
+  font-family: Monaco, monospace;
+  color: #ffffff; 
+  font-weight: bold;
+}
+
+#numDeadCrops {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  position: absolute;
+  padding: 0;
+  top: 448px;
+  left: 0;
+  right: 0;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: Verdana, sans-serif;
+  color: #884C1C;    
+  font-weight: bold;
+}
+
+#numDaysLeft {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  position: absolute;
+  padding: 0;
+  top: 490px;
+  left: 0;
+  right: 0;
+  text-decoration: none;
+  font-size: 60px;
+  font-family: Verdana, sans-serif;
+  color: #FFF7D8;    
+  font-weight: bold; 
+  font-style: italic;
+}
+
+#triviaPlace {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 1280px;
+  height: 720px;
+  position: absolute;
+}
+
+#nextDayButt {
+  left: 1021px;
+  top: 507px;
+  position: absolute;  
+}
+
+.triviaParts {
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+}
+
+#triviaQuestion {
+  position: absolute;
+  width: 635px;
+  height: 99px;
+  left: 322px;
+  top: 288px;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 22px;
+  font-family: Helvetica, sans-serif;
+  transition-duration: 0.4s;
+  border-radius: 10px;
+  background-color: #B97642;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+#triviaAns0 {
+  position: absolute;
+  padding: 5px;
+  width: 635px;
+  height: 76px;
+  left: 322px;
+  top: 394px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Verdana, sans-serif;
+  transition-duration: 0.4s;
+  cursor: pointer; 
+  border-radius: 15px;
+  background-color: #FEFEE3;
+  color: #884C1C;
+  border: none;
+}
+
+#triviaAns0:hover{
+  background-color: #EDBF9B;
+}
+
+#triviaAns1 {
+  position: absolute;
+  padding: 5px;
+  width: 635px;
+  height: 76px;
+  left: 322px;
+  top: 478px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Verdana, sans-serif;
+  transition-duration: 0.4s;
+  cursor: pointer; 
+  border-radius: 15px;
+  background-color: #FEFEE3;
+  color: #884C1C;
+  border: none;
+}
+
+#triviaAns1:hover {
+  background-color: #EDBF9B
+}
+
+#triviaAns2 {
+  position: absolute;
+  padding: 5px;
+  width: 635px;
+  height: 76px;
+  left: 322px;
+  top: 561px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Verdana, sans-serif;
+  transition-duration: 0.4s;
+  cursor: pointer; 
+  border-radius: 15px;
+  background-color: #FEFEE3;
+  color: #884C1C;
+  border: none;
+}
+
+#triviaAns2:hover {
+  background-color: #EDBF9B
+}
+
+#confirmAns {
+  left: 1021px;
+  top: 507px;
+  position: absolute;  
+}
+
+#triviaX {
+  display: none;
+  left: 1090px;
+  top: 182px;
+  position: absolute;
+}
+
+#end {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 1280px;
+  height: 720px;
+  position: absolute; 
+}
+
+#scoreBoard {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 1280px;
+  height: 720px;
+  position: absolute;   
+}
+
+@keyframes fade-inout {
+  100%{opacity:0;}
+  0%{opacity: 1;}
+}
+
+.fade-in-fade-out{
+  animation: fade-inout 4s 1 alternate;
+}
+
+/* @keyframes fade-out {
+   0% {opacity: 1;}
+   100% {opacity: 0;} 
+}
+
+@keyframes fade-in {
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+.fade-out{
+  animation: fade-out 1s;
+}
+
+.fade-in{
+  animation: fade-in 1s;
+} */
