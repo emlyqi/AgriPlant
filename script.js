@@ -24,7 +24,6 @@ var windPow = false;
 var first = true;
 localStorage.setItem("instructions", "0");
 var pfArray;
-localStorage.clear();
 
 const trivQ1 = ["Pesticides are often used to control pests in agriculture. What are some risks of pesticides on the human body?", "Affect the nervous system", "Affect the hormone or endocrine system", "All of the above", 2]
 const trivQ2 = ["What does good stewardship of the natural systems and resources that farms rely on not include?", "Removing carbon sinks", "Managing water wisely", "Promoting biodiversity", 0]
