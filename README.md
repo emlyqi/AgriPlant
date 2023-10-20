@@ -1,6 +1,6 @@
 # AgriPlant
 
-Play the game here: https://agriplant.emlyq.repl.co/
+Play the game [here](https://agriplantgame.web.app/)!
 
 AgriPlant is an interactive game that serves to educate users on agricultural sustainability. It features trivia questions, information cards, and basic simulations of real-life sustainability practices all while providing an engaging gameplay scenario suitable for interested learners. 
 
