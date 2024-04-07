@@ -1,6 +1,6 @@
 # AgriPlant
 
-This game was made during the 36-hour Katy Youth Hacks hackathon and won best design. Play it [here](https://agriplantgame.web.app/)!
+This game was made during the 36-hour Katy Youth Hacks hackathon and won the Best Design Award. Play it [here](https://agriplantgame.web.app/)!
 
 AgriPlant is an interactive game that serves to educate users on agricultural sustainability. It features trivia questions, information cards, and basic simulations of real-life sustainability practices all while providing an engaging gameplay scenario suitable for interested learners. 
 
